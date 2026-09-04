@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Attendance Register</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="masthead">
+    <div class="masthead-left">
+      <h1>Attendance Register</h1>
+      <p class="subtitle">Six subjects, one term, kept honest.</p>
+    </div>
+    <div class="masthead-right">
+      <div class="overall-figure">
+        <span id="overallPct">—</span>
+        <label>overall attendance</label>
+      </div>
+      <div class="overall-detail" id="overallDetail">0 of 0 classes attended</div>
+    </div>
+  </header>
+
+  <main class="register" id="register">
+    <!-- subject rows injected by script.js -->
+  </main>
+
+  <section class="ledger-panel">
+    <div class="ledger-head">
+      <h2>Today's log</h2>
+      <button class="btn-text" id="clearLogBtn" type="button">Clear log</button>
+    </div>
+    <ol class="ledger-list" id="ledgerList">
+      <li class="ledger-empty" id="ledgerEmpty">No entries yet — mark a class above and it will appear here.</li>
+    </ol>
+  </section>
+
+  <footer class="foot-note">
+    <p>Counts live in this browser tab only and reset on reload. Set a target line at 75% — the threshold most institutions use for eligibility.</p>
+    <button class="btn-text" id="resetAllBtn" type="button">Reset everything</button>
+  </footer>
+
+<script src="script.js"></script>
+</body>
+</html>
